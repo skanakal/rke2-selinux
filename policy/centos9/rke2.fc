@@ -14,6 +14,7 @@
 /opt/cni(/.*)?                                                           gen_context(system_u:object_r:container_file_t,s0)
 /etc/cni(/.*)?                                                           gen_context(system_u:object_r:container_file_t,s0)
 #/var/lib/kubelet/pods(/.*)?                                             gen_context(system_u:object_r:container_file_t,s0)
+/var/lib/rancher/rke2/server/db(/.*)?                                   gen_context(system_u:object_r:container_var_lib_t,s0)
 /var/lib/rancher/rke2(/.*)?                                             gen_context(system_u:object_r:container_var_lib_t,s0)
 /var/lib/rancher/rke2/data(/.*)?                                        gen_context(system_u:object_r:container_runtime_exec_t,s0)
 /var/lib/rancher/rke2/data/[^/]*/charts(/.*)?                           gen_context(system_u:object_r:container_config_t,s0)
